@@ -21,13 +21,12 @@ while True:
 		roku.home();
 	elif remoteinput == 'ok':
 		roku.select();
- 	elif remoteinput == 'open':
+	elif remoteinput == 'open':
 		appinput = input('APP (i.e. YouTube): ')
 		apptolaunch = roku[appinput];
 		apptolaunch.launch();
-  	elif remoteinput == 'text':
+	elif remoteinput == 'text':
 		text = input('TEXT: ');
 		roku.literal(text);
 	else:
 		print('Not a valid command.');
-
